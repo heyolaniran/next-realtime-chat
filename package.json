@@ -1,0 +1,33 @@
+{
+  "name": "node-realtime-chat",
+  "version": "1.0.0",
+  "description": "Realtime chap application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyolaniran/next-realtime-chat.git"
+  },
+  "keywords": [
+    "Node",
+    "Socket.io",
+    "Realtime",
+    "Chat",
+    "React",
+    "App"
+  ],
+  "author": "heyolaniran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyolaniran/next-realtime-chat/issues"
+  },
+  "homepage": "https://github.com/heyolaniran/next-realtime-chat#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "socket.io": "^4.7.1"
+  }
+}
