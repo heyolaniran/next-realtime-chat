@@ -17,11 +17,23 @@ const io = new Server(server , {
 
 io.on("connection", (socket) => {
         console.log(socket.id)
+
+
+        socket.on("join_room" , (data) => { 
+            console.log(`User ID: ${socket.id} joined ${data} room `)
+            socket.join(data) ; 
+        })
+
+        socket.on("send_message", (data) => { 
+            console.log(data) 
+        })
+
+        socket.on("disconnect", () => { 
+            console.log('User is disconnected ')
+        })
 })
 
-io.on("disconnect", () => { 
-    console.log('User is disconnected ')
-})
+
 server.listen('3001', () => { 
     console.log('Node server is running on 3001')
 })
