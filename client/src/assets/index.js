@@ -1,0 +1,1 @@
+import  load from './img/message.gif'  
