@@ -119,7 +119,7 @@ function App() {
                    <button
                      type="submit"
                      onClick={JoinRoom}
-                     className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+                     className="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white mb-2"
                    >
                    Join Chat 
                    </button>
