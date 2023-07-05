@@ -1,11 +1,10 @@
 import './App.css';
 import { io } from 'socket.io-client';
 import { useState } from 'react';
-import Room from './Room';
-import Loader from './Loader';
+import Room from './components/Room';
+import Loader from './components/Loader';
 
 const socket = io('http://localhost:3001') 
-console.log(" socket : " ,socket)
 function App() {
 
   const [username , setUsername] = useState("");
@@ -31,6 +30,13 @@ function App() {
     <div className="App">
       <div className='flex justify-center'>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-lg text-center">
+                 <h1 className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-red-400 to-orange-600">Experiment  <span className='struggle'>LiveStream</span>  Chat Today</h1>
+
+                 <p className="mt-4 text-gray-500">
+                 Exchange secretly and surely with your teamates in a encrypted rooms.
+                 </p>
+              </div>
           {isConnecting ? 
             <Loader />
            : isIn ?  (
@@ -38,13 +44,7 @@ function App() {
          ) : 
          (
            <>
-              <div className="mx-auto max-w-lg text-center">
-                 <h1 className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-red-400 to-orange-600">Experiment  <span className='struggle'>LiveStream</span>  Chat Today</h1>
-
-                 <p className="mt-4 text-gray-500">
-                 Exchange secretly and surely with your teamates in a encrypted rooms.
-                 </p>
-              </div>
+              
                <div  className="mx-auto mb-0 mt-8 max-w-md space-y-4 shadow-xl sm:p-6 lg:p-8">
                  <div>
                    <label htmlFor="email" className="sr-only">Email</label>
