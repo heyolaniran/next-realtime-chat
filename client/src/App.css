@@ -15,3 +15,8 @@ body {
     padding-bottom: 1%;
 
 }
+
+
+.scroll-bar { 
+    scrollbar-color: red orange;
+}
