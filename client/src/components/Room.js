@@ -58,10 +58,8 @@ export default function Room({room , username , socket}) {
                         <div className="flex-1 flex ">
                             <div className="chat-area flex-1 flex flex-col">
                                 <div className="messages flex-1 ">
-                               
-                                  
-                                   
-                                    {messageList.map((content) => { 
+                                
+                                     {messageList.map((content) => { 
                                       return content.author === username ? (
 
                                        <div className="message me mb-4 flex text-right">
@@ -86,6 +84,8 @@ export default function Room({room , username , socket}) {
                                         </div>
                                        )
                                     })}
+                                  
+                                   
                                     
                                 </div>
                             </div>

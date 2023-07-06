@@ -4,9 +4,9 @@
   "description": "Realtime chap application ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1" , 
-    "start-server" : "nodemon index.js", 
-    "start-app" : "(cd client && npm run start)"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "nodemon index.js",
+    "start-app": "(cd client && npm run start)"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^2.0.22",
+    "react-scroll-to-bottom": "^4.2.0",
     "socket.io": "^4.7.1"
   }
 }
