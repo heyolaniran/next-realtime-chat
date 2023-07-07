@@ -15,6 +15,7 @@ export default function Room({room , username , socket}) {
 
                 await socket.emit("send_message" , messageData)
                 setMessageList((list) => [...list , messageData])
+                setCurrentMessage("")
         }
       
     }

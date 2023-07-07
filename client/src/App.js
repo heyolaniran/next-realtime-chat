@@ -4,7 +4,11 @@ import { useState } from 'react';
 import Room from './components/Room';
 import Loader from './components/Loader';
 
-const socket = io('http://localhost:3001') 
+const socket = io('http://localhost:3001', {
+  reconnectionDelay: 10000, 
+  reconnectionDelayMax: 10000
+}) 
+
 function App() {
 
   const [username , setUsername] = useState("");
