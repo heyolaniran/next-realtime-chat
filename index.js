@@ -12,7 +12,11 @@ const io = new Server(server , {
     cors : { 
         origin : ["http://localhost:3000" , "http://next-realtime-chat.vercel.app"] , 
         methods : ['GET' , 'POST', 'DELETE']
-    }
+    } , 
+    connectionStateRecovery: {
+        maxDisconnectionDuration: 2 * 60 * 1000,
+        skipMiddlewares: true,
+      }
 })
 
 io.on("connection", (socket) => {
